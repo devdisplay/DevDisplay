@@ -25,6 +25,9 @@ function Sidebar() {
   function handleTechDisplay() {
     navigate('/TechDisplay');
   }
+  function handleAbout() {
+    navigate('/about');
+  }
 
   return (
     <div className="my-7 w-full border-r-2 border-borderSecondary px-7 font-spaceMono dark:border-borderColor md:h-[90vh] md:w-[23%] md:px-2 lg:px-7">
@@ -81,6 +84,12 @@ function Sidebar() {
           className="inline-flex cursor-pointer items-center rounded-lg border-2 border-textSecondary bg-textSecondary px-[15px] py-1.5 text-center font-poppoins text-sm transition-all duration-500 hover:bg-transparent hover:text-textSecondary dark:text-white"
         >
           Unlock the Power of DevDisplay
+        </button>
+        <button
+          onClick={handleAbout}
+          className="mt-3  inline-flex cursor-pointer  rounded-lg border-2 border-textSecondary bg-textSecondary px-[15px] py-1.5 text-left font-poppoins text-sm transition-all duration-500 hover:bg-transparent hover:text-textSecondary dark:text-white"
+        >
+          About us
         </button>
       </div>
     </div>

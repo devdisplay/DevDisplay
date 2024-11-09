@@ -5,6 +5,7 @@ import Homepage from './Homepage';
 import TechDisplay from './Page/TechDisplay.jsx';
 import Home from './Page/Home.jsx';
 import Opportunities from './Page/Opportunities.jsx';
+import About from './Page/about.jsx';
 import IdeaSubmission from './Page/IdeaSubmission.jsx';
 import PortfolioBuilder from './Page/PortfolioBuilder.jsx';
 import Projects from './Page/Projects.jsx';
@@ -63,6 +64,8 @@ function App() {
 
       <Routes>
         <Route index element={<Homepage />} />
+        <Route path="/opportunities" element={<Opportunities />} />
+        <Route path="/about" element={<About />} />
         <Route path="/TechDisplay" element={<TechDisplay />} />
         <Route path="/Home" element={<Home />} />
         <Route path="/Opportunities" element={<Opportunities />} />
